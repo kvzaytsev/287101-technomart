@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Техномарт</title>
+   </head>
+   <body>
+      <header class="page-header">
+         <div class="header-top">
+            <div class="container">
+               <a class="home-tom">Техномарт</a>
+               <div class="search">
+                  <span class="search__title">поиск:</span>
+                  <input type="search" class="search__input">
+               </div>
+               <a class="bookmarks empty">
+                  <span class="bookmarks__title">закладки:</span>
+                  <span class="bookmarks__count">0</span>
+               </div>
+               <a class="cart-top empty">
+                  <span class="cart-top__title">корзина:</span>
+                  <span class="cart-top__count">0</span>
+               </a>
+               <a class="checkout">
+                  Оформить заказ
+               </a>
+            </div>
+         </div>
+         <div class="header-main">
+            <div class="container">
+               <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+               <div class="header-contacts">
+                  <div class="header-contacts__tel">+7 (812) 555-05-55</div>
+                  <p class="header-contacts__address">
+                     г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+                  </p>
+               </div>
+               <div class="user-block">
+                  <a class="sign-in">Войти</a>
+                  <a class="sign-up">Регистрация</a>
+               </div>
+               <nav class="main-navigation">
+                  <ul class="nav-menu">
+                     <li class="nav-menu__item">
+                       <a href="#">Главная</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Компания</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Каталог</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Новости</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Спецпредложения</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Доставка</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="container">
+            <ul class="breadcrumbs">
+               <li class="breadcrumb">
+                  <a href="#"><img class="breadcrumb-home" width="15" height="15" src="http://placehold.it/15x15" alt="home"></a>
+               </li>
+               <li class="breadcrumb">
+                  <a href="#">Каталог</a>
+               </li>
+               <li class="breadcrumb">
+                  <a href="#">инструмент</a>
+               </li>
+               <li class="breadcrumb">
+                  перфораторы
+               </li>
+            </ul>
+            <h1>перфораторы</h1>
+            <section class="filters">
+               <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="filters-title">Фильтр:</div>
+                  <div class="filter filter-price">
+                     <p class="filter__title">цена</p>
+                     <div class="slider">
+                        <div class="slider__input">
+                           <input type="range" min="0" max="50000" name="price">
+                        </div>
+                        <div class="slider-output">
+                           <div class="slider-output__min"></div>
+                           <div class="slider-output__middle"> - </div>
+                           <div class="slider-output__max"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="filter filter-vendors">
+                     <h2 class="filter__name">Производители:</h2>
+                     <ul class="filter-group">
+                        <li class="filter-item">
+                           <input
+                                 id="vendor-bosch"
+                                 type="checkbox"
+                                 name="good-vendors[]"
+                                 value="bosch"
+                                 checked >
+                           <label for="vendor-bosch">bosch</label>
+                        </li>
+                        <li class="filter-item">
+                           <input
+                                 id="vendor-interskol"
+                                 type="checkbox"
+                                 name="good-vendors[]"
+                                 value="interskol" >
+                           <label for="vendor-interskol">интерскол</label>
+                        </li>
+                        <li class="filter-item">
+                           <input
+                                 id="vendor-makita"
+                                 type="checkbox"
+                                 name="good-vendors[]"
+                                 value="makita"
+                                 checked >
+                           <label for="vendor-makita">makita</label>
+                        </li>
+                        <li class="filter-item">
+                           <input
+                                 id="vendor-dewalt"
+                                 type="checkbox"
+                                 name="good-vendors[]"
+                                 value="dewalt" >
+                           <label for="vendor-dewalt">dewalt</label>
+                        </li>
+                        <li class="filter-item">
+                           <input
+                                 id="vendor-hitachi"
+                                 type="checkbox"
+                                 name="good-vendors[]"
+                                 value="hitachi" >
+                           <label for="vendor-hitachi">hitachi</label>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="filter filter-power">
+                     <h2 class="filter__name">питание:</h2>
+                     <ul class="filter-group">
+                        <li class="filter-item">
+                           <input
+                                 id="power-accumulator"
+                                 type="radio"
+                                 name="power"
+                                 value="accumulator"
+                                 checked>
+                           <label for="power-accumulator">аккумуляторные</label>
+                        </li>
+                        <li class="filter-item">
+                           <input
+                                 id="power-cable"
+                                 type="radio"
+                                 name="power"
+                                 value="cable">
+                           <label for="power-cable">сетевые</label>
+                        </li>
+                     </ul>
+                  </div>
+                  <button type="submit" class="btn btn-submit">показать</button>
+               </form>
+            </section>
+         </div>
+      </main>
+      <footer class="page-footer">
+         <div class="footer-top">
+            <div class="container">
+               <a class="home-bottom"></a>
+               <p class="footer-address">
+                  г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8 <br>
+                  +7 (812) 555-05-55
+               </p>
+               <nav class="nav-bottom-pages">
+                  <ul class="nav-menu-bottom">
+                     <li class="nav-menu__item">
+                       <a href="#">Компания</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Новости</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Каталог</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Доставка</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+               <nav class="nav-bottom-sections">
+                  <ul class="nav-menu-bottom">
+                     <li class="nav-menu__item">
+                       <a href="#">Материалы</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Техника</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Инструмент</a>
+                     </li>
+                     <li class="nav-menu__item">
+                       <a href="#">Спецпредложения</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <section class="footer-copyright">
+                  <p>
+                     &copy; 2010-2016 Компания &laquo;Техномарт&raquo;<br>
+                     +7 (812) 555-05-55
+                  </p>
+               </section>
+               <section class="footer-social">
+                   <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                   <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                   <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+               </section>
+               <section class="footer-feedback">
+                   <p>Обратная связь:</p>
+                   <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+               </section>
+               <section class="footer-author">
+                   <p>Разработано -</p>
+                   <a class="feedback-link" href="http://htmlacademy.ru">htmlacademy.ru</a>
+               </section>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
