@@ -36,8 +36,18 @@
                   </p>
                </div>
                <div class="user-block">
-                  <a class="sign-in">Войти</a>
-                  <a class="sign-up">Регистрация</a>
+                  <div class="user-info">
+                     <span class="user-info__name">Равшан Джамшутович</span>
+                     <a href="#" class="user-info__exit">
+                        <img width="15" height="15" src="http://placehold.it/15x15">
+                     </a>
+                  </div>
+                  <div class="user-links">
+                     <ul>
+                        <li><a href="#">Мои заказы</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                     </ul>
+                  </div>
                </div>
                <nav class="main-navigation">
                   <ul class="nav-menu">
@@ -90,8 +100,10 @@
                   <div class="filter filter-price">
                      <p class="filter__title">цена</p>
                      <div class="slider">
-                        <div class="slider__input">
-                           <input type="range" min="0" max="50000" name="price">
+                        <div class="slider-input">
+                           <div class="slider-input__handle"></div>
+                           <div class="slider-input__handle"></div>
+                           <div class="slider-input__line"></div>
                         </div>
                         <div class="slider-output">
                            <div class="slider-output__min"></div>
@@ -174,12 +186,161 @@
             </section>
             <section class="index-content">
                <div class="soring">
-                  <span class="sort-title"></span>
-                  <span class="sort-type sort-kind-type">по цене</span>
-                  <span class="sort-type sort-kind-type">по типу</span>
-                  <span class="sort-type sort-kind-func">по функционалу</span>
+                  <span class="sort-title">сортировка:</span>
+                  <span class="sort-kind sort-kind-type">по цене</span>
+                  <span class="sort-kind sort-kind-type">по типу</span>
+                  <span class="sort-kind sort-kind-func">по функционалу</span>
                   <span class="sort-order sort-order-asc"></span>
                   <span class="sort-order sort-order-desc"></span>
+               </div>
+               <div class="index-content">
+                  <div class="good-card">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 3000
+                     </div>
+                     <div class="good-card__old-price">
+                        22500 р.
+                     </div>
+                     <a class="good-card__price">
+                        15500 р.
+                     </a>
+                  </div>
+                  <div class="good-card">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 6000
+                     </div>
+                     <div class="good-card__old-price">
+                        30500 р.
+                     </div>
+                     <a class="good-card__price">
+                        25500 р.
+                     </a>
+                  </div>
+                  <div class="good-card good-card_new">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 2000
+                     </div>
+                     <div class="good-card__old-price"></div>
+                     <a class="good-card__price">
+                        12500 р.
+                     </a>
+                  </div>
+                  <div class="good-card">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 3000
+                     </div>
+                     <div class="good-card__old-price">
+                        22500 р.
+                     </div>
+                     <a class="good-card__price">
+                        15500 р.
+                     </a>
+                  </div>
+                  <div class="good-card">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 6000
+                     </div>
+                     <div class="good-card__old-price">
+                        30500 р.
+                     </div>
+                     <a class="good-card__price">
+                        25500 р.
+                     </a>
+                  </div>
+                  <div class="good-card good-card_new">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 2000
+                     </div>
+                     <div class="good-card__old-price"></div>
+                     <a class="good-card__price">
+                        12500 р.
+                     </a>
+                  </div>
+                  <div class="good-card">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 3000
+                     </div>
+                     <div class="good-card__old-price">
+                        22500 р.
+                     </div>
+                     <a class="good-card__price">
+                        15500 р.
+                     </a>
+                  </div>
+                  <div class="good-card">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 6000
+                     </div>
+                     <div class="good-card__old-price">
+                        30500 р.
+                     </div>
+                     <a class="good-card__price">
+                        25500 р.
+                     </a>
+                  </div>
+                  <div class="good-card good-card_new">
+                     <div class="good-card__new"></div>
+                     <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                     <div class="good-actions">
+                        <a href="#" class="good-actions__buy"></a>
+                        <a href="#" class="good-actions__to-bookmarks"></a>
+                     </div>
+                     <div class="good-card__desc">
+                        Перфоратор BOSCH BFG 2000
+                     </div>
+                     <div class="good-card__old-price"></div>
+                     <a class="good-card__price">
+                        12500 р.
+                     </a>
+                  </div>
                </div>
                <ul class="pager">
                   <li class="pager-item pager-item-prev">
@@ -205,9 +366,21 @@
                ПАРА СЛОВ О ПЕРФОРАТОРАХ
             </p>
             <p>
-               Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-            </p>
+               Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p>
+         </div>
+         <div class="cart-popup popup">
+            <button type="button" class="popup-close">x</button>
+            <div class="container">
+               <span>Товар добавлен в корзину!</span>
+            </div>
+            <div class="popup-bottom">
+               <div class="container">
+                  <a href="#" class="link-btn">оформить заказ</a>
+                  <a href="#" class="link-btn link-btn-grey">продолжить покупки</a>
+               </div>
+            </div>
          </div>
       </main>
       <footer class="page-footer">

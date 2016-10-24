@@ -118,7 +118,7 @@
             <div class="popular-content">
                <div class="good-card">
                   <div class="good-card__new"></div>
-                  <img class="good-card__image">
+                  <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
                   <div class="good-actions">
                      <a href="#" class="good-actions__buy"></a>
                      <a href="#" class="good-actions__to-bookmarks"></a>
@@ -135,7 +135,7 @@
                </div>
                <div class="good-card">
                   <div class="good-card__new"></div>
-                  <img class="good-card__image">
+                  <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
                   <div class="good-actions">
                      <a href="#" class="good-actions__buy"></a>
                      <a href="#" class="good-actions__to-bookmarks"></a>
@@ -152,7 +152,7 @@
                </div>
                <div class="good-card">
                   <div class="good-card__new"></div>
-                  <img class="good-card__image">
+                  <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
                   <div class="good-actions">
                      <a href="#" class="good-actions__buy"></a>
                      <a href="#" class="good-actions__to-bookmarks"></a>
@@ -169,7 +169,11 @@
                </div>
                <div class="good-card good-card_new">
                   <div class="good-card__new"></div>
-                  <img class="good-card__image">
+                  <img class="good-card__image" src="http://placehold.it/140x180" height="140" width="180">
+                  <div class="good-actions">
+                     <a href="#" class="good-actions__buy"></a>
+                     <a href="#" class="good-actions__to-bookmarks"></a>
+                  </div>
                   <div class="good-card__desc">
                      Перфоратор BOSCH BFG 2000
                   </div>
@@ -243,10 +247,40 @@
                <p>
                   Вы можете забрать товар сами, заехав в наш офис:
                </p>
-               <div class="map"></div>
+               <div class="map">
+                  <a href="#">
+                     <img src="http://placehold.it/250x130" height="130" width="250">
+                  </a>
+               </div>
                <a href="#" class="link-btn">заблудились? напишите нам!</a>
             </div>
          </section>
+         <div class="lost-popup popup">
+            <form action="action=https://echo.htmlacademy.ru" method="post">
+               <button type="button" class="popup-close">x</button>
+               <div class="container">
+                  <div class="dialog-half">
+                     <label for="form-name">Ваше имя:</label>
+                     <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="form-name">
+                  </div>
+                  <div class="dialog-half">
+                     <label for="form-email">Ваш e-mail:</label>
+                     <input type="text" placeholder="Представьтесь, пожалуйста" name="email" id="form-email">
+                  </div>
+                  <label for="form-text">Текст письма:</label>
+                  <textarea id="form-text" rows="5" placeholder="В свободной форме"></textarea>
+               </div>
+               <div class="popup-bottom">
+                  <button type="submit">отправить</button>
+               </div>
+            </form>
+         </div>
+         <div class="map-popup popup">
+            <button type="button" class="popup-close">x</button>
+            <div class="map-popup__content">
+               <img width="500" height="200" alt="карта" src="http://placehold.it/500x200">
+            </div>
+         </div>
       </main>
       <footer class="page-footer">
          <div class="footer-top">
