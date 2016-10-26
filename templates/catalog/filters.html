@@ -1,90 +1,89 @@
-<section class="filters">
-  <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="filters-title">Фильтр:</div>
-    <div class="filter filter-price">
-      <h3 class="filter__name">Цена:</h3>
-      <div class="slider">
-        <div class="slider-input">
-          <div class="slider-input__handle"></div>
-          <div class="slider-input__handle"></div>
-          <div class="slider-input__line"></div>
-        </div>
-        <div class="slider-output">
-          <div class="slider-output__min">0</div>
-          <div class="slider-output__middle"> - </div>
-          <div class="slider-output__max">30000</div>
+<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+  <div class="filters-title">Фильтр:</div>
+  <div class="filter filter-price">
+    <h3 class="filter-name">Цена:</h3>
+    <div class="price-slider">
+      <div class="slider-line">
+        <div class="slider-line slider-line-active">
+          <div class="slider-handle slider-handle-left"></div>
+          <div class="slider-handle slider-handle-right"></div>
         </div>
       </div>
     </div>
-    <div class="filter filter-vendors">
-      <h3 class="filter__name">Производители:</h3>
-      <ul class="filter-group">
-        <li class="filter-item">
-          <input
-            id="vendor-bosch"
-            type="checkbox"
-            name="good-vendors[]"
-            value="bosch"
-            checked >
-          <label for="vendor-bosch">bosch</label>
+    <div class="price-inputs">
+      <input name="price-min" type="number" min="0" value="0">
+      <span class="slider-output__middle"> &ndash; </span>
+      <input name="price-max" type="number" min="0" value="30000">
+    </div>
+  </div>
+  <div class="filter filter-vendors">
+    <h3 class="filter__name">Производители:</h3>
+    <ul class="filter-group">
+      <li class="filter-item">
+        <input
+          id="vendor-bosch"
+          type="checkbox"
+          name="good-vendors[]"
+          value="bosch"
+          checked >
+        <label for="vendor-bosch">bosch</label>
+      </li>
+      <li class="filter-item">
+        <input
+          id="vendor-interskol"
+          type="checkbox"
+          name="good-vendors[]"
+          value="interskol" >
+          <label for="vendor-interskol">интерскол</label>
         </li>
         <li class="filter-item">
           <input
-            id="vendor-interskol"
+            id="vendor-makita"
             type="checkbox"
             name="good-vendors[]"
-            value="interskol" >
-            <label for="vendor-interskol">интерскол</label>
-          </li>
-          <li class="filter-item">
-            <input
-              id="vendor-makita"
-              type="checkbox"
-              name="good-vendors[]"
-              value="makita"
-              checked >
-            <label for="vendor-makita">makita</label>
-          </li>
-          <li class="filter-item">
-            <input
-              id="vendor-dewalt"
-              type="checkbox"
-              name="good-vendors[]"
-              value="dewalt" >
-            <label for="vendor-dewalt">dewalt</label>
-          </li>
-          <li class="filter-item">
-            <input
-              id="vendor-hitachi"
-              type="checkbox"
-              name="good-vendors[]"
-              value="hitachi" >
-            <label for="vendor-hitachi">hitachi</label>
-          </li>
-        </ul>
-      </div>
-      <div class="filter filter-power">
-        <h3 class="filter__name">Питание:</h3>
-        <ul class="filter-group">
-          <li class="filter-item">
-            <input
-              id="power-accumulator"
-              type="radio"
-              name="power"
-              value="accumulator"
-              checked>
-            <label for="power-accumulator">Aккумуляторные</label>
-          </li>
-          <li class="filter-item">
-            <input
-              id="power-cable"
-              type="radio"
-              name="power"
-              value="cable">
-            <label for="power-cable">Cетевые</label>
-          </li>
-        </ul>
+            value="makita"
+            checked >
+          <label for="vendor-makita">makita</label>
+        </li>
+        <li class="filter-item">
+          <input
+            id="vendor-dewalt"
+            type="checkbox"
+            name="good-vendors[]"
+            value="dewalt" >
+          <label for="vendor-dewalt">dewalt</label>
+        </li>
+        <li class="filter-item">
+          <input
+            id="vendor-hitachi"
+            type="checkbox"
+            name="good-vendors[]"
+            value="hitachi" >
+          <label for="vendor-hitachi">hitachi</label>
+        </li>
+      </ul>
     </div>
-    <button type="submit" class="btn btn-submit">показать</button>
-  </form>
-</section>
+    <div class="filter filter-power">
+      <h3 class="filter__name">Питание:</h3>
+      <ul class="filter-group">
+        <li class="filter-item">
+          <input
+            id="power-accumulator"
+            type="radio"
+            name="power"
+            value="accumulator"
+            checked>
+          <label for="power-accumulator">Aккумуляторные</label>
+        </li>
+        <li class="filter-item">
+          <input
+            id="power-cable"
+            type="radio"
+            name="power"
+            value="cable">
+          <label for="power-cable">Cетевые</label>
+        </li>
+      </ul>
+  </div>
+  <button type="submit" class="btn btn-submit">показать</button>
+</form>

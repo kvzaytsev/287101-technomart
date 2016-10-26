@@ -6,47 +6,51 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+
+    <!-- Хедер начало -->
     <header class="page-header">
       <div class="header-top">
         <div class="container">
-          <a class="home-top">
-            <img src="http://placehold.it/110x20" height="20" width="110" alt="ТЕХНОМАРТ"/>
+          <a class="home-top" href="#">
+            <img class="logo" src="http://placehold.it/110x20" height="20" width="110" alt="ТЕХНОМАРТ"/>
           </a>
           <div class="search">
-            <span  class="search__title">поиск:</span>
-            <input class="search__input" type="search">
+            <input class="search-input" type="search" placeholder="поиск:">
           </div>
-          <a class="bookmarks">
-            <span class="bookmarks__title">закладки:</span>
-            <span class="bookmarks__count">0</span>
-          </a>
-          <a class="cart-top">
-            <span class="cart-top__title">корзина:</span>
-            <span class="cart-top__count">0</span>
-          </a>
-          <a class="checkout">
-            Оформить заказ
-          </a>
+          <div class="purchase-block">
+            <a class="purchase-link bookmarks"  href="#">
+              <span class="bookmarks-title">закладки:</span>
+              <span class="bookmarks-count">0</span>
+            </a>
+            <a class="purchase-link purchase-link-filled cart"  href="#">
+              <span class="cart-title">корзина:</span>
+              <span class="cart-count">10</span>
+            </a>
+            <a class="checkout" href="#">
+              Оформить заказ
+            </a>
+          </div>
         </div>
       </div>
       <div class="header-main">
         <div class="container">
-          <div class="header-desc">Интернет-магазин строительных материалов и инструментов для ремонта</div>
-          <div class="header-contacts">
-            <a class="header-contacts__tel" href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
-            <p class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
-          </div>
-          <div class="user-block">
-            <div class="user-info">
-              <span class="user-info__name">Равшан Джамшутович</span>
-              <a href="#" class="user-info__exit">
-                <img width="15" height="15" src="http://placehold.it/15x15">
-              </a>
+          <div class="header-main-content">
+            <h1 class="shop-desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+            <div class="header-contacts">
+              <a href="#" class="header-contacts-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <p class="header-contacts-ddress">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
             </div>
-            <ul class="user-links">
-              <li><a href="#">Мои заказы</a></li>
-              <li><a href="#">Личный кабинет</a></li>
-            </ul>
+            <!-- Авторизованный -->
+            <div class="user-block">
+              <div class="user-info">
+                <a href="#" class="user-info-profile">Равшан Джамшутович</a>
+                <a href="#" class="user-info-exit">Выход</a>
+              </div>
+              <div class="user-links">
+                <a href="#">Мои заказы</li>
+                <a href="#">Личный кабинет</li>
+              </div>
+            </div>
           </div>
           <nav class="main-navigation">
             <ul class="nav-menu">
@@ -76,6 +80,8 @@
         </div>
       </div>
     </header>
+    <!-- Хедер конец -->
+
     <main>
       <div class="container">
         <ul class="breadcrumbs">
@@ -92,352 +98,251 @@
             перфораторы
           </li>
         </ul>
-        <h1 class="catalog-location">перфораторы</h1>
-        <section class="filters">
-          <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="filters-title">Фильтр:</div>
-            <div class="filter filter-price">
-              <h3 class="filter__name">Цена:</h3>
-              <div class="slider">
-                <div class="slider-input">
-                  <div class="slider-input__handle"></div>
-                  <div class="slider-input__handle"></div>
-                  <div class="slider-input__line"></div>
+
+        <section class="catalog">
+          <header class="catalog-header">
+            <h2 class="header-title">Перфораторы:</span>
+          </header>
+          <div class="catalog-content">
+
+            <!-- Фильтры начало-->
+            <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="filters-title">Фильтр:</div>
+              <div class="filter filter-price">
+                <h3 class="filter-name">Цена:</h3>
+                <div class="price-slider">
+                  <div class="slider-line">
+                    <div class="slider-line slider-line-active">
+                      <div class="slider-handle slider-handle-left"></div>
+                      <div class="slider-handle slider-handle-right"></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="slider-output">
-                  <div class="slider-output__min">0</div>
-                  <div class="slider-output__middle"> - </div>
-                  <div class="slider-output__max">30000</div>
+                <div class="price-inputs">
+                  <input name="price-min" type="number" min="0" value="0">
+                  <span class="slider-output__middle"> &ndash; </span>
+                  <input name="price-max" type="number" min="0" value="30000">
                 </div>
               </div>
-            </div>
-            <div class="filter filter-vendors">
-              <h3 class="filter__name">Производители:</h3>
-              <ul class="filter-group">
-                <li class="filter-item">
-                  <input
-                    id="vendor-bosch"
-                    type="checkbox"
-                    name="good-vendors[]"
-                    value="bosch"
-                    checked >
-                  <label for="vendor-bosch">bosch</label>
-                </li>
-                <li class="filter-item">
-                  <input
-                    id="vendor-interskol"
-                    type="checkbox"
-                    name="good-vendors[]"
-                    value="interskol" >
-                    <label for="vendor-interskol">интерскол</label>
-                  </li>
-                  <li class="filter-item">
-                    <input
-                      id="vendor-makita"
-                      type="checkbox"
-                      name="good-vendors[]"
-                      value="makita"
-                      checked >
-                    <label for="vendor-makita">makita</label>
-                  </li>
-                  <li class="filter-item">
-                    <input
-                      id="vendor-dewalt"
-                      type="checkbox"
-                      name="good-vendors[]"
-                      value="dewalt" >
-                    <label for="vendor-dewalt">dewalt</label>
-                  </li>
-                  <li class="filter-item">
-                    <input
-                      id="vendor-hitachi"
-                      type="checkbox"
-                      name="good-vendors[]"
-                      value="hitachi" >
-                    <label for="vendor-hitachi">hitachi</label>
-                  </li>
-                </ul>
-              </div>
-              <div class="filter filter-power">
-                <h3 class="filter__name">Питание:</h3>
+              <div class="filter filter-vendors">
+                <h3 class="filter__name">Производители:</h3>
                 <ul class="filter-group">
                   <li class="filter-item">
                     <input
-                      id="power-accumulator"
-                      type="radio"
-                      name="power"
-                      value="accumulator"
-                      checked>
-                    <label for="power-accumulator">Aккумуляторные</label>
+                      id="vendor-bosch"
+                      type="checkbox"
+                      name="good-vendors[]"
+                      value="bosch"
+                      checked >
+                    <label for="vendor-bosch">bosch</label>
                   </li>
                   <li class="filter-item">
                     <input
-                      id="power-cable"
-                      type="radio"
-                      name="power"
-                      value="cable">
-                    <label for="power-cable">Cетевые</label>
-                  </li>
-                </ul>
+                      id="vendor-interskol"
+                      type="checkbox"
+                      name="good-vendors[]"
+                      value="interskol" >
+                      <label for="vendor-interskol">интерскол</label>
+                    </li>
+                    <li class="filter-item">
+                      <input
+                        id="vendor-makita"
+                        type="checkbox"
+                        name="good-vendors[]"
+                        value="makita"
+                        checked >
+                      <label for="vendor-makita">makita</label>
+                    </li>
+                    <li class="filter-item">
+                      <input
+                        id="vendor-dewalt"
+                        type="checkbox"
+                        name="good-vendors[]"
+                        value="dewalt" >
+                      <label for="vendor-dewalt">dewalt</label>
+                    </li>
+                    <li class="filter-item">
+                      <input
+                        id="vendor-hitachi"
+                        type="checkbox"
+                        name="good-vendors[]"
+                        value="hitachi" >
+                      <label for="vendor-hitachi">hitachi</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter filter-power">
+                  <h3 class="filter__name">Питание:</h3>
+                  <ul class="filter-group">
+                    <li class="filter-item">
+                      <input
+                        id="power-accumulator"
+                        type="radio"
+                        name="power"
+                        value="accumulator"
+                        checked>
+                      <label for="power-accumulator">Aккумуляторные</label>
+                    </li>
+                    <li class="filter-item">
+                      <input
+                        id="power-cable"
+                        type="radio"
+                        name="power"
+                        value="cable">
+                      <label for="power-cable">Cетевые</label>
+                    </li>
+                  </ul>
+              </div>
+              <button type="submit" class="btn btn-submit">показать</button>
+            </form>
+            <!-- Фильтры конец-->
+
+            <!-- Контент начало -->
+            <div class="index-content">
+              <div class="soring">
+                <a class="sort-title">Сортировка:</a>
+                <a class="sort-kind sort-kind-type active">По цене</a>
+                <a class="sort-kind sort-kind-type">По типу</a>
+                <a class="sort-kind sort-kind-func">По функционалу</a>
+                <a class="sort-order sort-order_asc active">По возрастанию</a>
+                <a class="sort-order sort-order_desc">По убыванию</a>
+              </div>
+
+              <div class="view-content">
+                <article class="good-card">
+                  <img
+                    height="140"
+                    width="180"
+                    class="good-image"
+                    src="http://placehold.it/140x180"
+                    alt="Перфоратор BOSCH BFG 3000">
+                  <div class="good-actions">
+                    <a href="#" class="good-action-buy">Купить</a>
+                    <a href="#" class="good-action-to-bookmarks">В закладки</a>
+                  </div>
+                  <header class="good-card-header">
+                    Перфоратор BOSCH BFG 3000
+                  </header>
+                  <div class="old-price">22500 р.</div>
+                  <a href="#" class="price">15500 р.</a>
+                </article>
+                <article class="good-card">
+                  <img
+                    height="140"
+                    width="180"
+                    class="good-image"
+                    src="http://placehold.it/140x180"
+                    alt="Перфоратор BOSCH BFG 6000">
+                  <div class="good-actions">
+                    <a href="#" class="good-action-buy">Купить</a>
+                    <a href="#" class="good-action-to-bookmarks">В закладки</a>
+                  </div>
+                  <header class="good-card-header">
+                    Перфоратор BOSCH BFG 6000
+                  </header>
+                  <div class="old-price">30500 р.</div>
+                  <a href="#" class="price">25500 р.</a>
+                </article>
+                <article class="good-card new-flag">
+                  <img
+                    height="140"
+                    width="180"
+                    class="good-image"
+                    src="http://placehold.it/140x180"
+                    alt="Перфоратор BOSCH BFG 2000">
+
+                  <div class="good-actions">
+                    <a href="#" class="good-action-buy">Купить</a>
+                    <a href="#" class="good-action-to-bookmarks">В закладки</a>
+                  </div>
+
+                  <header class="good-card-header">
+                    Перфоратор BOSCH BFG 2000
+                  </header>
+
+                  <div class="old-price"></div>
+                  <a href="#" class="price">12500 р.</a>
+                </article>
+              </div>
+
+              <ul class="pager">
+                <li class="pager-item active">1</li>
+                <li class="pager-item"><a href="#">2</a></li>
+                <li class="pager-item"><a href="#">3</a></li>
+                <li class="pager-item pager-item-next"><a href="#">следующая</a></li>
+              </ul>
             </div>
-            <button type="submit" class="btn btn-submit">показать</button>
-          </form>
-        </section>
-        <section class="index-content">
-          <div class="soring">
-            <span class="sort-title">сортировка:</span>
-            <span class="sort-kind sort-kind-type">по цене</span>
-            <span class="sort-kind sort-kind-type">по типу</span>
-            <span class="sort-kind sort-kind-func">по функционалу</span>
-            <i class="sort-order sort-order_asc active"></i>
-            <i class="sort-order sort-order_desc"></i>
+            <!-- Контент конец -->
+
           </div>
-          <div class="view-content">
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-            <article class="good-card good-card_new">
-              <div class="good-card__new-flag"></div>
-              <img
-                height="140"
-                width="180"
-                class="good-card__image"
-                src="http://placehold.it/140x180" >
-              <div class="good-actions">
-                <a href="#" class="good-actions__buy"></a>
-                <a href="#" class="good-actions__to-bookmarks"></a>
-              </div>
-              <div class="good-card__desc">
-                Перфоратор BOSCH BFG 6000
-              </div>
-              <div class="good-card__old-price">30500 р.</div>
-              <a class="good-card__price">
-                25500 р.
-              </a>
-            </article>
-          </div>
-          <ul class="pager">
-            <li class="pager-item pager-item-prev"><a href="#">предыдущая</a></li>
-            <li class="pager-item">1</li>
-            <li class="pager-item active"><a href="#">2</a></li>
-            <li class="pager-item"><a href="#">3</a></li>
-            <li class="pager-item pager-item-next"><a href="#">следующая</a></li>
-          </ul>
         </section>
       </div>
-      <div class="additional-info">
+
+      <div class="aux-info">
         <div class="container">
-          <h2 class="info__title">
-            ПАРА СЛОВ О ПЕРФОРАТОРАХ
-          </h2>
+          <h2 class="aux-info-title">Пара слов о перфораторах</h2>
           <p>
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
       </div>
+
     </main>
+
+    <!-- Футер начало -->
     <footer class="page-footer">
       <div class="footer-top">
         <div class="container">
-          <a class="home-bottom">
-            <img height="20" width="110" src="http://placehold.it/20x110">
-          </a>
-          <p class="footer-address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8 <br>
-            <a href="tel:+7 (812) 555-05-55"+7 (812) 555-05-55</a>
-          </p>
-          <nav class="nav-bottom-pages">
-            <ul class="nav-menu-bottom">
-              <li class="nav-menu__item">
+          <div class="footer-top-row">
+            <a href="#" class="home-bottom">
+              <img class="logo" height="20" width="110" src="http://placehold.it/20x110">
+            </a>
+            <ul class="menu-bottom menu-bottom-sections">
+              <li class="menu-item">
                 <a href="#">Компания</a>
               </li>
-              <li class="nav-menu__item">
+              <li class="menu-item">
                 <a href="#">Новости</a>
               </li>
-              <li class="nav-menu__item">
+              <li class="menu-item">
                 <a href="#">Каталог</a>
               </li>
-              <li class="nav-menu__item">
+              <li class="menu-item">
                 <a href="#">Доставка</a>
               </li>
-              <li class="nav-menu__item">
+              <li class="menu-item">
                 <a href="#">Контакты</a>
               </li>
             </ul>
-          </nav>
-          <nav class="nav-bottom-sections">
-            <ul class="nav-menu-bottom">
-              <li class="nav-menu__item">
+          </div>
+          <div class="footer-top-row">
+            <p class="footer-address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8 <br>
+              <a href="tel:+7 (812) 555-05-55"+7 (812) 555-05-55</a>
+            </p>
+            <ul class="menu-bottom menu-bottom-promo">
+              <li class="menu-item">
                 <a href="#">Материалы</a>
               </li>
-              <li class="nav-menu__item">
+              <li class="menu-item">
                 <a href="#">Техника</a>
               </li>
-              <li class="nav-menu__item">
+              <li class="menu-item">
                 <a href="#">Инструмент</a>
               </li>
-              <li class="nav-menu__item">
+              <li class="menu-item">
                 <a href="#">Спецпредложения</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="container">
           <section class="footer-copyright">
-            <p>&copy; 2010-2016 Компания &laquo;Техномарт&raquo;<p>
-            <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+            <div>&copy; 2010-2016 Компания &laquo;Техномарт&raquo;<div>
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </section>
           <section class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -445,15 +350,30 @@
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </section>
           <section class="footer-feedback">
-            <p>Обратная связь:</p>
+            <div>Обратная связь:</div>
             <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
           <section class="footer-author">
-            <p>Разработано -</p>
+            <div>Разработано &ndash;</div>
             <a class="feedback-link" href="http://htmlacademy.ru">htmlacademy.ru</a>
           </section>
         </div>
       </div>
     </footer>
+    <!-- Футер конец -->
+
+    <div class="popup cart-popup">
+      <button type="button" class="popup-close">Закрыть</button>
+      <div class="popup-content">
+        Товар добавлен в корзину!
+      </div>
+      <div class="popup-bottom">
+        <div class="container">
+          <a href="#" class="link-btn">оформить заказ</a>
+          <a href="#" class="link-btn link-btn-grey">продолжить покупки</a>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

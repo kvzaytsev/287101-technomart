@@ -1,20 +1,18 @@
-<div class="lost-popup popup">
+<div class="popup lost-popup">
   <form action="action=https://echo.htmlacademy.ru" method="post">
-    <button type="button" class="popup-close">x</button>
-    <div class="container">
-      <div class="dialog-half">
-        <label for="form-name">Ваше имя:</label>
-        <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="form-name">
-      </div>
-      <div class="dialog-half">
-        <label for="form-email">Ваш e-mail:</label>
-        <input type="text" placeholder="Представьтесь, пожалуйста" name="email" id="form-email">
-      </div>
-      <label for="form-text">Текст письма:</label>
-      <textarea id="form-text" rows="5" placeholder="В свободной форме"></textarea>
+    <button type="button" class="popup-close">Закрыть</button>
+    <div class="dialog-half">
+      <label for="form-name">Ваше имя:</label>
+      <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="form-name">
     </div>
+    <div class="dialog-half">
+      <label for="form-email">Ваш e-mail:</label>
+      <input type="email" placeholder="Ваш e-mail" name="email" id="form-email">
+    </div>
+    <label for="form-text">Текст письма:</label>
+    <textarea id="form-text" placeholder="В свободной форме"></textarea>
     <div class="popup-bottom">
-      <button type="submit">отправить</button>
+      <button type="submit">Отправить</button>
     </div>
   </form>
 </div>
