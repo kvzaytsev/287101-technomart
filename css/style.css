@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
@@ -30,4 +36,328 @@ h3 {
   line-height: 1.1;
   font-size: 18px;
   color: #000;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.page-header {
+  margin-bottom: 59px;
+}
+
+.header-top {
+  background-color: #293449;
+}
+
+.home-top {
+  display: inline-block;
+  width: 220px;
+  /*border-bottom: 5px solid #b52933;*/
+
+  text-align: center;
+  background-color: #ee3643;
+}
+
+.header-main {
+  padding-top: 46px;
+  padding-bottom: 60px;
+}
+
+.search {
+  display: inline-block;
+}
+
+.purchase-block {
+  float: right;
+}
+
+.header-main {
+  background-color: #f1f5f7;
+}
+
+.shop-desc {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.header-contacts {
+  float: left;
+  width: 300px;
+}
+
+.user-block {
+  float: right;
+  width: 300px;
+  text-align: right;
+}
+
+.main-navigation {
+  background-color: #32425c;
+}
+
+.promo {
+  margin-bottom: 53px;
+}
+
+.gallery {
+  float: left;
+  width: 620px;
+  min-height: 266px;
+  margin-right: 20px;
+}
+
+.promo-block {
+  float: left;
+  min-height: 123px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.promo-block:first-child,
+.promo-block:nth-child(2) {
+  margin-right: 20px;
+}
+
+.promo-block:last-child {
+  margin-bottom: 0;
+}
+
+.popular {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  min-height: 89px;
+  margin-bottom: 20px;
+
+  background-color: #f7f3ec;
+}
+
+.popular-header .section-header-title {
+  float: left;
+}
+
+.popular-header .popular-header-all {
+  float: right;
+}
+
+.good-card {
+  position: relative;
+
+  float: left;
+  width: 218px;
+  min-height: 316px;
+  margin-right: 20px;
+
+  border: 1px solid #e5e5e5;
+}
+
+.popular-content .good-card:last-child {
+  margin-right: 0;
+}
+
+.venodor {
+  display: inline-block;
+  float: left;
+  min-height: 143px;
+  width: 218px;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.popular-content .venodor:nth-child(4n) {
+  margin-right: 0;
+}
+
+.services {
+  margin-bottom: 79px;
+  background-color: #f2f6f8;
+}
+
+.services-content .services-list {
+  float: left;
+  width: 240px;
+}
+
+.services-content-right {
+  float: right;
+  width: 620px;
+}
+
+.service-advantage {
+  width: 300px;
+}
+
+.about-us .company-block {
+  float: left;
+  width: 540px;
+}
+
+.about-us .contacts-block {
+  float: right;
+  width: 300px;
+}
+
+.page-footer {
+  padding-bottom: 86px;
+}
+
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-top-menu {
+  min-height: 96px;
+}
+
+.footer-top-menu .home-bottom {
+  float: left;
+}
+
+.footer-top-menu .menu-bottom-sections {
+  float: right;
+}
+
+.footer-top-catalog .footer-address {
+  float: left;
+}
+
+.footer-top-catalog .menu-bottom-promo {
+  float: right;
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-copyright {
+  width: 300px;
+  float: left;
+  margin-right: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 150px;
+}
+
+.footer-author {
+  width: 140px;
+  float:right;
+}
+
+.footer-feedback {
+  float:right;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.popup .lost-popup {
+  box-sizing: border-box;
+  width: 620px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.map-popup {
+  width: 940px;
+}
+
+.popup .dialog-half {
+  width: 220px;
+  display: inline-block;
+}
+
+.popup input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.popup-close {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+/*
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  display: none;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+
+  background: rgb(234, 255, 45);
 }
