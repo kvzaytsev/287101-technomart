@@ -225,10 +225,15 @@ h3 {
   font-size: 21px;
 }
 
+a.sign-in {
+  padding-right: 26px;
+}
+
 .sign-in::before {
   content: "";
   display: inline-block;
-  width: 20px;
+  margin-left: -9px;
+  width: 33px;
   height: 20px;
   background: url('../img/icons/icon-login.png') no-repeat;
   vertical-align: middle;
