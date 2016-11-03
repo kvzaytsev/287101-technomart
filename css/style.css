@@ -89,7 +89,7 @@ h3 {
 .purchase-block a {
   display: inline-block;
   padding-top: 12px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   line-height: 1.05;
   font-size: 17px;
   color: #fff;
@@ -111,7 +111,7 @@ h3 {
   border: none;
   box-sizing: border-box;
   padding-top: 11px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
   padding-left: 49px;
   background-color: transparent;
   background-image: url("../img/icons/icon-search.png");
@@ -120,6 +120,10 @@ h3 {
   font-size: 17px;
   line-height: 1.2;
   font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.search-input:focus {
+  background-color: #fff;
 }
 
 /*.search::before {
@@ -279,10 +283,6 @@ a.sign-in {
   display: inline-block;
 }
 
-.nav-menu-item + .nav-menu-item {
-    margin-left: -1px;
-}
-
 .nav-menu-item a {
   display: block;
   padding-top: 13px;
@@ -301,6 +301,7 @@ a.sign-in {
 
 .promo {
   margin-bottom: 53px;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .gallery {
@@ -315,6 +316,51 @@ a.sign-in {
   min-height: 123px;
   width: 300px;
   margin-bottom: 20px;
+}
+
+.promo-materials {
+  background-color: #F6B22D;
+}
+
+.promo-tools {
+  background-color: #4AAEDF;
+}
+
+.promo-machinery {
+  background-color: #CD79D1;
+}
+
+.promo-sale {
+  background-color: #85D179;
+}
+
+.promo-delivery {
+  background-color: #F6B22D;
+}
+
+.promo-block-title {
+  padding-top: 21px;
+  padding-bottom: 12px;
+  padding-left: 23px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #fff;
+}
+
+.promo-block-link {
+  display: inline-block;
+  width: 135px;
+  margin-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgba(0,0,0,0.5);
 }
 
 .promo-block:first-child,
