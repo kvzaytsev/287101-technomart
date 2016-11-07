@@ -61,6 +61,7 @@ h3 {
   background-color: #293449;
 }
 
+.home-bottom,
 .home-top {
   float: left;
   position: relative;
@@ -77,6 +78,7 @@ h3 {
   font-size: 24px;
 }
 
+.home-bottom::after,
 .home-top::after {
   content: "";
   position: absolute;
@@ -406,9 +408,6 @@ a.sign-in {
 }
 
 .slide img {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .slide.active {
@@ -424,7 +423,7 @@ a.sign-in {
 }
 
 .popular {
-  margin-bottom: 21px;
+  margin-bottom: 1px;
 }
 
 .section-header {
@@ -448,7 +447,7 @@ a.sign-in {
 
 .link-btn {
   display: inline-block;
-  padding: 10px 55px;
+  padding: 10px 40px;
   background-color: #ee3643;
   color: #fff;
   border-radius: 3px;
@@ -463,30 +462,29 @@ a.sign-in {
 
 .good-card {
   position: relative;
-
   float: left;
   width: 218px;
   margin-right: 20px;
+  margin-bottom: 20px;
   padding-bottom: 19px;
   border: 1px solid #e5e5e5;
   font-weight: bold;
-
   text-align: center;
 }
 
 .good-card-image  {
   height: 180px;
   width: 100%;
+  line-height: 180px;
   background-color: #fff;
 }
 
 .good-card-image  .good-image {
-  display: block;
+  vertical-align: middle;
   margin: auto;
 }
 
 .good-actions {
-
   display: none;
   position: absolute;
 }
@@ -715,9 +713,40 @@ a.sign-in {
   line-height: 1;
 }
 
+.about-us {
+  padding-bottom: 85px;
+}
+
 .about-us .company-block {
   float: left;
   width: 540px;
+}
+
+.company-block .company-intro {
+  margin-bottom: 25px;
+}
+
+.company-delivery .trans-list {
+  padding: 0;
+  margin-bottom: 37px;
+  list-style: none;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.trans-list-item {
+  margin-bottom: 18px;
+}
+
+.trans-list-item::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  vertical-align: middle;
 }
 
 .about-us .contacts-block {
@@ -725,8 +754,54 @@ a.sign-in {
   width: 300px;
 }
 
+.contacts-block p {
+    margin-bottom: 30px;
+}
+
+.contacts-block .map {
+  margin-bottom: 35px;
+}
+
+.contacts-block .link-btn {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .page-footer {
   padding-bottom: 86px;
+}
+
+.home-bottom {
+  font-size: 30px;
+  line-height: 1;
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+
+.menu-bottom {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.menu-bottom .menu-item {
+  display: inline-block;
+  margin-right: 60px;
+  vertical-align: top;
+}
+
+.menu-bottom .menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-bottom-sections a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
 }
 
 .footer-top {
