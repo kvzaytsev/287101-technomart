@@ -103,12 +103,20 @@
           <div class="gallery">
             <div class="slides-block">
               <div class="slide slide-first active">
-                <img src="http://placehold.it/520x225" width="520" height="225" alt="Перфораторы">
+                <img
+                  src="img/gallery/gallery-1.jpg"
+                  width="620"
+                  height="266"
+                  alt="Перфораторы">
                 <div class="slide-title">Перфораторы</div>
                 <div class="slide-subtitle">Настоящие мужские игрушки</div>
               </div>
               <div class="slide slide-second">
-                <img src="http://placehold.it/520x225" width="520" height="225" alt="Дрели">
+                <img
+                  src="img/gallery/gallery-2.jpg"
+                  width="620"
+                  height="266"
+                  alt="Дрели">
                 <div class="slide-title">Дрели</div>
                 <div class="slide-subtitle">Настоящие мужские игрушки</div>
               </div>
@@ -140,12 +148,14 @@
           </header>
           <div class="popular-content clearfix">
             <article class="good-card">
-              <img
-                height="140"
-                width="180"
-                class="good-image"
-                src="http://placehold.it/140x180"
-                alt="Перфоратор BOSCH BFG 9000">
+              <div class="good-card-image">
+                <img
+                  height="164"
+                  width="184"
+                  class="good-image"
+                  src="img/goods/bfg-9000.jpg"
+                  alt="Перфоратор BOSCH BFG 9000">
+              </div>
               <div class="good-actions">
                 <a href="#" class="good-action-buy">Купить</a>
                 <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -157,12 +167,14 @@
               <a href="#" class="price">25500 р.</a>
             </article>
             <article class="good-card">
-              <img
-                height="140"
-                width="180"
-                class="good-image"
-                src="http://placehold.it/140x180"
-                alt="Перфоратор BOSCH BFG 3000">
+              <div class="good-card-image">
+                <img
+                  height="112"
+                  width="127"
+                  class="good-image"
+                  src="img/goods/bfg-2000-3000.jpg"
+                  alt="Перфоратор BOSCH BFG 3000">
+              </div>
               <div class="good-actions">
                 <a href="#" class="good-action-buy">Купить</a>
                 <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -174,12 +186,14 @@
               <a href="#" class="price">15500 р.</a>
             </article>
             <article class="good-card">
-              <img
-                height="140"
-                width="180"
-                class="good-image"
-                src="http://placehold.it/140x180"
-                alt="Перфоратор BOSCH BFG 6000">
+              <div class="good-card-image">
+                <img
+                  height="128"
+                  width="144"
+                  class="good-image"
+                  src="img/goods/bfg-6000.jpg"
+                  alt="Перфоратор BOSCH BFG 6000">
+              </div>
               <div class="good-actions">
                 <a href="#" class="good-action-buy">Купить</a>
                 <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -191,13 +205,14 @@
               <a href="#" class="price">25500 р.</a>
             </article>
             <article class="good-card new-flag">
-              <img
-                height="140"
-                width="180"
-                class="good-image"
-                src="http://placehold.it/140x180"
-                alt="Перфоратор BOSCH BFG 2000">
-
+              <div class="good-card-image">
+                <img
+                  height="112"
+                  width="127"
+                  class="good-image"
+                  src="img/goods/bfg-2000-3000.jpg"
+                  alt="Перфоратор BOSCH BFG 2000">
+              </div>
               <div class="good-actions">
                 <a href="#" class="good-action-buy">Купить</a>
                 <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -237,7 +252,7 @@
       <section class="services">
         <div class="container">
           <header class="services-header">
-            <div class="services-title">сервисы</div>
+            <div class="services-title">Cервисы</div>
           </header>
           <p class="services-desc">
             Хороший интернет-магазин отличается от плохого не только ценами!<br>
@@ -245,13 +260,19 @@
           </p>
           <div class="services-content clearfix">
             <ul class="services-list">
-              <li class="services-list__item">Доставка</li>
-              <li class="services-list__item">Гарантия</li>
-              <li class="services-list__item">Кредит</li>
+              <li class="services-list-item active">
+                <a href="#service-delivery">Доставка</a>
+              </li>
+              <li class="services-list-item">
+                <a href="#service-guarantee">Гарантия</a>
+              </li>
+              <li class="services-list-item">
+                <a href="#service-credit">Кредит</a>
+              </li>
             </ul>
             <div class="services-content-right">
 
-              <div class="service service-delivery">
+              <div id="service-delivery" class="service service-delivery">
                 <h2 class="service-name">Доставка</h2>
                 <p class="service-advantage">
                   Мы с удовольствием доставим ваш товар прямо<br>
@@ -260,18 +281,19 @@
                   поднимая его на ваш этаж!
                 </p>
               </div>
-              <div class="service service-guarantee">
+              <div id="service-guarantee" class="service service-guarantee">
                 <h2 class="service-name">Гарантия</h2>
-                <p>
-                  Если купленный у нас товар поломается или заискрит, а также в случае пожара,
-                  спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
-                  Мы обменяем сгоревший товар на новый.<br>
+                <p class="service-advantage">
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгоранием,<br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                  сгоревший товар на новый.<br>
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </div>
-              <div class="service service-credit">
+              <div id="service-credit" class="service service-credit">
                 <h2 class="service-name">Кредит</h2>
-                <p>
+                <p class="service-advantage">
                   Залезть в долговую яму стало проще!<br>
                   Кредитные консультации придут вам на помощь.
                 </p>
