@@ -396,8 +396,10 @@
       <div class="footer-bottom clearfix">
         <div class="container">
           <section class="footer-copyright">
-            <div>&copy; 2010-2016 Компания &laquo;Техномарт&raquo;<div>
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <div>
+              &copy; 2010-2016 Компания &laquo;Техномарт&raquo;<br>
+              Bсе права защищены
+            <div>
           </section>
           <section class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -409,7 +411,7 @@
             <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
           <section class="footer-author">
-            <div>Разработано &ndash;</div>
+            <div>Разработано &mdash;</div>
             <a class="feedback-link" href="http://htmlacademy.ru">htmlacademy.ru</a>
           </section>
         </div>
@@ -421,18 +423,22 @@
     <div class="popup lost-popup">
       <form action="action=https://echo.htmlacademy.ru" method="post">
         <button type="button" class="popup-close">Закрыть</button>
-        <div class="dialog-half">
-          <label for="form-name">Ваше имя:</label>
-          <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="form-name">
+        <div class="popup-content">
+          <div class="dialog-columns clearfix">
+            <div class="dialog-column">
+              <label for="form-name">Ваше имя:</label>
+              <input type="text" placeholder="Представьтесь, пожалуйста" name="name" id="form-name">
+            </div>
+            <div class="dialog-column">
+              <label for="form-email">Ваш   e-mail:</label>
+              <input type="email" placeholder="Для отправки ответа" name="email" id="form-email">
+            </div>
+          </div>
+          <label for="form-text">Текст письма:</label>
+          <textarea id="form-text" placeholder="В свободной форме"></textarea>
         </div>
-        <div class="dialog-half">
-          <label for="form-email">Ваш e-mail:</label>
-          <input type="email" placeholder="Для отправки ответа" name="email" id="form-email">
-        </div>
-        <label for="form-text">Текст письма:</label>
-        <textarea id="form-text" placeholder="В свободной форме"></textarea>
         <div class="popup-bottom">
-          <button type="submit">Отправить</button>
+          <button type="submit" class="link-btn btn-submit">Отправить</button>
         </div>
       </form>
     </div>
