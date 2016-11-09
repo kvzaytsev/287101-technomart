@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Техномарт</title>
   </head>
-  <body>
+  <body class="page-catalog">
 
     <!-- Хедер начало -->
     <header class="page-header">
@@ -46,7 +46,7 @@
               <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
             <div class="user-block">
-              <div class="user-action user-info">
+              <div class="user-info clearfix">
                 <a href="#" class="user-info-profile">Равшан Джамшутович</a>
                 <a href="#" class="user-info-exit">Выход</a>
               </div>
@@ -99,7 +99,7 @@
             <a href="#">Инструмент</a>
           </li>
           <li class="breadcrumb">
-            Перфораторы
+            <a>Перфораторы</a>
           </li>
         </ul>
 
@@ -204,7 +204,7 @@
             <!-- Контент начало -->
             <div class="index-content">
               <div class="soring">
-                <a href="#" class="sort-title">Сортировка:</a>
+                <span class="sort-title">Сортировка:</span>
                 <a href="#" class="sort-kind sort-kind-type active">По цене</a>
                 <a href="#" class="sort-kind sort-kind-type">По типу</a>
                 <a href="#" class="sort-kind sort-kind-func">По функционалу</a>
@@ -214,12 +214,14 @@
 
               <div class="view-content clearfix">
                 <article class="good-card">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 3000">
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-2000-3000.jpg"
+                      alt="Перфоратор BOSCH BFG 3000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -231,12 +233,14 @@
                   <a href="#" class="price">15500 р.</a>
                 </article>
                 <article class="good-card">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 6000">
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-6000.jpg"
+                      alt="Перфоратор BOSCH BFG 6000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -248,30 +252,35 @@
                   <a href="#" class="price">25500 р.</a>
                 </article>
                 <article class="good-card new-flag">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 2000">
-
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-2000-3000.jpg"
+                      alt="Перфоратор BOSCH BFG 2000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
                   </div>
+
                   <header class="good-card-header">
                     Перфоратор BOSCH BFG 2000
                   </header>
+
                   <div class="old-price"></div>
                   <a href="#" class="price">12500 р.</a>
                 </article>
                 <article class="good-card">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 3000">
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-2000-3000.jpg"
+                      alt="Перфоратор BOSCH BFG 3000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -282,13 +291,15 @@
                   <div class="old-price">22500 р.</div>
                   <a href="#" class="price">15500 р.</a>
                 </article>
-                <article class="good-card new-flag">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 6000">
+                <article class="good-card">
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-6000.jpg"
+                      alt="Перфоратор BOSCH BFG 6000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -299,31 +310,36 @@
                   <div class="old-price">30500 р.</div>
                   <a href="#" class="price">25500 р.</a>
                 </article>
-                <article class="good-card">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 2000">
-
+                <article class="good-card new-flag">
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-2000-3000.jpg"
+                      alt="Перфоратор BOSCH BFG 2000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
                   </div>
+
                   <header class="good-card-header">
                     Перфоратор BOSCH BFG 2000
                   </header>
+
                   <div class="old-price"></div>
                   <a href="#" class="price">12500 р.</a>
                 </article>
-                <article class="good-card new-flag">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 3000">
+                <article class="good-card">
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-2000-3000.jpg"
+                      alt="Перфоратор BOSCH BFG 3000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -335,12 +351,14 @@
                   <a href="#" class="price">15500 р.</a>
                 </article>
                 <article class="good-card">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 6000">
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-6000.jpg"
+                      alt="Перфоратор BOSCH BFG 6000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
@@ -351,21 +369,24 @@
                   <div class="old-price">30500 р.</div>
                   <a href="#" class="price">25500 р.</a>
                 </article>
-                <article class="good-card">
-                  <img
-                    height="140"
-                    width="180"
-                    class="good-image"
-                    src="http://placehold.it/140x180"
-                    alt="Перфоратор BOSCH BFG 2000">
-
+                <article class="good-card new-flag">
+                  <div class="good-card-image">
+                    <img
+                      height="180"
+                      width="218"
+                      class="good-image"
+                      src="img/goods/bfg-2000-3000.jpg"
+                      alt="Перфоратор BOSCH BFG 2000">
+                  </div>
                   <div class="good-actions">
                     <a href="#" class="good-action-buy">Купить</a>
                     <a href="#" class="good-action-to-bookmarks">В закладки</a>
                   </div>
+
                   <header class="good-card-header">
                     Перфоратор BOSCH BFG 2000
                   </header>
+
                   <div class="old-price"></div>
                   <a href="#" class="price">12500 р.</a>
                 </article>
