@@ -137,8 +137,15 @@ h3 {
 }
 
 .purchase-link {
-  padding-right: 30px;
-  text-align: right;
+  padding-left: 50px;
+}
+
+.purchase-link.bookmarks {
+  padding-left: 45px;
+}
+
+.purchase-link-filled {
+  background-color: #ee3643;
 }
 
 .purchase-link,
@@ -185,7 +192,7 @@ h3 {
 .header-contacts {
   float: left;
   width: 270px;
-
+  margin-right: 50px;
   text-align: center;
 }
 
@@ -221,15 +228,15 @@ h3 {
 
 .user-block {
   float: right;
-  width: 330px;
-  text-align: right;
+  width: 300px;
 }
 
 .user-sign-in-up {
   font-size: 0;
+  text-align: right;
 }
 
-.user-sign-in-up > a {
+.user-action {
   display: inline-block;
   margin-left: 10px;
   padding: 12px 24px;
@@ -238,6 +245,15 @@ h3 {
   line-height: 1;
   font-size: 21px;
 }
+
+.user-info {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: left;
+
+}
+
 
 a.sign-in {
   padding-right: 26px;
@@ -379,7 +395,6 @@ a.sign-in {
 .new-flag:after {
   content: "new";
   position: absolute;
-  display: none;
   top: 0;
   right: 0;
   background-color: #ee3643;
@@ -394,8 +409,6 @@ a.sign-in {
   font-size: 16px;
   line-height: 1.125;
 }
-
-
 
 .gallery {
   position: relative;
@@ -770,7 +783,6 @@ a.sign-in {
 }
 
 .page-footer {
-  padding-bottom: 86px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
@@ -933,14 +945,21 @@ a.sign-in {
 
 .popup {
   position: fixed;
-  top: 100px;
+  /*top: 100px;*/
+  top: 5px;
   left:50%;
   z-index: 11;
-  border-top: 5px solid #FE0028;
-  background: rgba(255, 0, 0, 0.2);
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.popup input,
+.popup textarea {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
 }
 
 .popup label {
@@ -950,6 +969,7 @@ a.sign-in {
 
 .lost-popup {
   display: none;
+  border-top: 7px solid #FE0028;
   box-sizing: border-box;
   width: 620px;
   margin-left: -310px;
@@ -959,9 +979,9 @@ a.sign-in {
 .lost-popup textarea {
   display: block;
   width: 100%;
-  height: 100px;
+  height: 115px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 9px 15px;
   border: 1px solid #EAEDEC;
   border-radius: 3px;
   resize: none;
@@ -970,13 +990,29 @@ a.sign-in {
 .popup-content {
   padding-left: 80px;
   padding-right: 80px;
-  padding-top: 40px;
+  padding-top: 37px;
   padding-bottom: 35px;
 }
 
 .map-popup {
+  display: none;
   width: 940px;
   margin-left: -470px;
+  background-color: #ccc;
+}
+
+.cart-popup {
+  display: none;
+  width: 620px;
+  margin-left: -310px;
+}
+
+.dialog-columns {
+  margin-bottom: 22px;
+}
+
+.dialog {
+  background: #fff;
 }
 
 .dialog-column {
@@ -991,14 +1027,14 @@ a.sign-in {
 
 .popup input {
   width: 100%;
-  padding: 10px;
+  padding: 9px 14px;
   box-sizing: border-box;
   border: 1px solid #EAEDEC;
   border-radius: 3px;
 }
 
 .popup-bottom {
-  padding: 33px 0;
+  padding: 37px 0;
   background-color: #F1F0EF;
   text-align: center;
 }
