@@ -122,15 +122,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="price-inputs">
-                  <input name="price-min" type="number" min="0" value="0">
-                  <span class="slider-output__middle"> &ndash; </span>
-                  <input name="price-max" type="number" min="0" value="30000">
+                <div class="price-inputs clearfix">
+                  <input class="price-min" name="price-min" type="text" value="0">
+                  <span class="price-divider"> &mdash; </span>
+                  <input class="price-max" name="price-max" type="text" value="30000">
                 </div>
               </div>
               <div class="filter filter-vendors">
-                <h3 class="filter__name">Производители:</h3>
-                <ul class="filter-group">
+                <h3 class="filter-name">Производители:</h3>
+                <ul class="filter-group filter-group-checkbox">
                   <li class="filter-item">
                     <input
                       id="vendor-bosch"
@@ -146,56 +146,56 @@
                       type="checkbox"
                       name="good-vendors[]"
                       value="interskol" >
-                      <label for="vendor-interskol">интерскол</label>
-                    </li>
-                    <li class="filter-item">
-                      <input
+                    <label for="vendor-interskol">интерскол</label>
+                  </li>
+                  <li class="filter-item">
+                    <input
                         id="vendor-makita"
                         type="checkbox"
                         name="good-vendors[]"
                         value="makita"
                         checked >
-                      <label for="vendor-makita">makita</label>
-                    </li>
-                    <li class="filter-item">
-                      <input
-                        id="vendor-dewalt"
-                        type="checkbox"
-                        name="good-vendors[]"
-                        value="dewalt" >
-                      <label for="vendor-dewalt">dewalt</label>
-                    </li>
-                    <li class="filter-item">
-                      <input
-                        id="vendor-hitachi"
-                        type="checkbox"
-                        name="good-vendors[]"
-                        value="hitachi" >
-                      <label for="vendor-hitachi">hitachi</label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="filter filter-power">
-                  <h3 class="filter__name">Питание:</h3>
-                  <ul class="filter-group">
-                    <li class="filter-item">
-                      <input
-                        id="power-accumulator"
-                        type="radio"
-                        name="power"
-                        value="accumulator"
-                        checked>
-                      <label for="power-accumulator">Aккумуляторные</label>
-                    </li>
-                    <li class="filter-item">
-                      <input
-                        id="power-cable"
-                        type="radio"
-                        name="power"
-                        value="cable">
-                      <label for="power-cable">Cетевые</label>
-                    </li>
-                  </ul>
+                    <label for="vendor-makita">makita</label>
+                  </li>
+                  <li class="filter-item">
+                    <input
+                      id="vendor-dewalt"
+                      type="checkbox"
+                      name="good-vendors[]"
+                      value="dewalt" >
+                    <label for="vendor-dewalt">dewalt</label>
+                  </li>
+                  <li class="filter-item">
+                    <input
+                      id="vendor-hitachi"
+                      type="checkbox"
+                      name="good-vendors[]"
+                      value="hitachi" >
+                    <label for="vendor-hitachi">hitachi</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter filter-power">
+                <h3 class="filter-name">Питание:</h3>
+                <ul class="filter-group filter-group-radio">
+                  <li class="filter-item">
+                    <input
+                      id="power-accumulator"
+                      type="radio"
+                      name="power"
+                      value="accumulator"
+                      checked>
+                    <label for="power-accumulator">Aккумуляторные</label>
+                  </li>
+                  <li class="filter-item">
+                    <input
+                      id="power-cable"
+                      type="radio"
+                      name="power"
+                      value="cable">
+                    <label for="power-cable">Cетевые</label>
+                  </li>
+                </ul>
               </div>
               <button type="submit" class="btn btn-submit">показать</button>
             </form>
@@ -203,13 +203,15 @@
 
             <!-- Контент начало -->
             <div class="index-content">
-              <div class="soring">
+              <div class="soring clearfix">
                 <span class="sort-title">Сортировка:</span>
-                <a href="#" class="sort-kind sort-kind-type active">По цене</a>
-                <a href="#" class="sort-kind sort-kind-type">По типу</a>
-                <a href="#" class="sort-kind sort-kind-func">По функционалу</a>
-                <a href="#" class="sort-order sort-order_asc active">По возрастанию</a>
-                <a href="#" class="sort-order sort-order-desc">По убыванию</a>
+                <div class="sort-kinds">
+                  <a class="sort-kind sort-kind-type active">По цене</a>
+                  <a href="#" class="sort-kind sort-kind-type">По типу</a>
+                  <a href="#" class="sort-kind sort-kind-func">По функционалу</a>
+                  <a href="#" class="sort-order sort-order-asc active">По возрастанию</a>
+                  <a href="#" class="sort-order sort-order-desc">По убыванию</a>
+                </div>
               </div>
 
               <div class="view-content clearfix">
