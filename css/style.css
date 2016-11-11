@@ -555,6 +555,7 @@ a.breadcrumb-home {
   right: -10px;
 }
 
+
 .price-inputs {
   margin-top: 10px;
 }
@@ -860,7 +861,26 @@ input[type="radio"]:checked + label::before{
 .gallery-circles {
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: 35px;
+}
+
+.gallery-circle {
+  display: inline-block;;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 0 1px 1px #cdc7c3;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  text-indent: -9999px;
+  margin-right: 10px;
+}
+
+.gallery-circle-filled {
+  background-color: #ee3643;
 }
 
 a.gallery-to-catalog {
@@ -938,6 +958,45 @@ a.gallery-to-catalog {
 .good-actions {
   display: none;
   position: absolute;
+  padding-top: 45px;
+  height: 135px;
+  background: #fff;
+  top:0;
+}
+
+.good-actions .link-btn {
+  width: 135px;
+  box-sizing: border-box;
+  padding: 8px 0;
+  margin-bottom: 13px;
+
+}
+
+.good-action-buy {
+  position: relative;
+  background: #63a63e;
+  box-shadow: 0 4px 0 0 #32425c;
+}
+
+.good-action-buy::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  background: url('../img/icons/icon-basket.png') no-repeat;
+}
+
+.good-actions .good-action-to-bookmarks {
+  padding: 7px 0;
+  background: #fff;
+  color: #32425c;
+  border: 3px solid #63a63e;
+}
+
+.good-card:hover .good-actions {
+  display: block;
 }
 
 .good-card-header {
@@ -1427,8 +1486,6 @@ a.gallery-to-catalog {
 
 .popup {
   position: fixed;
-  /*top: 100px;*/
-  top: 5px;
   left:50%;
   z-index: 11;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1455,6 +1512,7 @@ a.gallery-to-catalog {
 
 .lost-popup {
   display: none;
+  top: 100px;
   box-sizing: border-box;
   width: 620px;
   margin-left: -310px;
@@ -1481,6 +1539,7 @@ a.gallery-to-catalog {
 
 .map-popup {
   display: none;
+  top:20px;
   width: 940px;
   margin-left: -470px;
   background-color: #ccc;
@@ -1489,7 +1548,31 @@ a.gallery-to-catalog {
 .cart-popup {
   display: none;
   width: 620px;
+  top:410px;
   margin-left: -310px;
+}
+
+.cart-popup .cart-added-title {
+  position: relative;
+  font-size: 30px;
+  padding-left: 100px;
+}
+
+.cart-popup .cart-added-title::before {
+  content: "";
+  position: absolute;
+  top:-15px;
+  left: 0;
+  width: 65px;
+  height: 65px;
+  background: #63a63e url('../img/icons/checkmark.png') no-repeat center;
+  border-radius: 50%;
+}
+
+.cart-popup .link-btn{
+  width: 220px;
+  box-sizing: border-box;
+  margin-right: 20px;
 }
 
 .dialog-columns {
@@ -1572,6 +1655,11 @@ a.gallery-to-catalog {
   float: left;
   width: 220px;
   margin-right: 20px;
+}
+
+a.link-btn-white {
+  color: #000;
+  background-color: #fff;
 }
 
 .index-content {
