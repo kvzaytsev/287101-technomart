@@ -806,12 +806,20 @@ input[type="radio"]:checked + label::before{
 }
 
 .slide-title {
+  margin-bottom: 4px;
   color: #fff;
   font-size: 35px;
   font-weight: bold;
   line-height: 1;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
+}
+
+.slide-subtitle {
+  color: #fff;
+  line-height: 1;
+  font-size: 19px;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .slide img {
@@ -825,12 +833,43 @@ input[type="radio"]:checked + label::before{
   display: block;
 }
 
-.gallery .slides-block {
-  position: absolute;
+.gallery-btn {
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    text-indent: -9999px;
 }
 
-.gallery .slide.active {
-  z-index: 1;
+.gallery-btn-left {
+    left: 25px;
+    top:50%;
+    background: url('../img/icons/icon-left.png') no-repeat;
+}
+
+.gallery-btn-right {
+  right: 20px;
+  top:50%;
+  background: url('../img/icons/icon-right.png') no-repeat;
+}
+
+.gallery-circles {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+}
+
+a.gallery-to-catalog {
+  position: absolute;
+  padding: 11px 48px;
+  left: 26px;
+  bottom: 20px;
+  left: 25px;
+  bottom: 20px;
 }
 
 .popular {
