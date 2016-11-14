@@ -12,7 +12,7 @@
     <header class="page-header">
       <div class="header-top clearfix">
         <div class="container">
-          <a class="home-top" href="#">
+          <a class="logo home-top" href="#">
             Техномарт
             <!-- <img class="logo" src="http://placehold.it/110x20" height="20" width="110" alt="ТЕХНОМАРТ"/> -->
           </a>
@@ -63,7 +63,7 @@
                 <a href="#">Компания</a>
               </li>
               <li class="nav-menu-item">
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
               </li>
               <li class="nav-menu-item">
                 <a href="#">Новости</a>
@@ -331,7 +331,7 @@
               заехав в наш офис:
             </p>
             <div class="map">
-              <a href="#">
+              <a href="#" class="link-map">
                 <img
                   height="158"
                   width="300"
@@ -339,7 +339,7 @@
                   alt="Карта">
               </a>
             </div>
-            <a href="#" class="link-btn">Заблудились? Напишите нам!</a>
+            <a href="#" class="link-btn link-lost">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </section>
@@ -350,7 +350,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="footer-top-menu clearfix">
-            <a href="#" class="home-bottom">
+            <a href="#" class="logo home-bottom">
               Техномарт
             </a>
             <ul class="menu-bottom menu-bottom-sections">
@@ -361,7 +361,7 @@
                 <a href="#">Новости</a>
               </li>
               <li class="menu-item">
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
               </li>
               <li class="menu-item">
                 <a href="#">Доставка</a>
@@ -447,9 +447,21 @@
     <div class="popup map-popup">
       <button type="button" class="popup-close">Закрыть</button>
       <div class="map-popup-content">
-        <img width="940" height="446" alt="Карта" src="img/maps/map-big.png">
+        <img width="940" height="446" alt="Карта" src="img/maps/map-big.jpg">
       </div>
     </div>
 
+    <div class="popup cart-popup dialog">
+      <button type="button" class="popup-close">Закрыть</button>
+      <div class="popup-content">
+        <span class="cart-added-title">Товар добавлен в корзину!</span>
+      </div>
+      <div class="popup-bottom">
+          <a href="#" class="link-btn">Оформить заказ</a>
+          <a href="#" class="link-btn link-btn-white">Продолжить покупки</a>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
