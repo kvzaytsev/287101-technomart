@@ -3,6 +3,8 @@ var KEYS = {
 }
 
 var i, l,
+    savedName = localStorage.getItem("name"),
+    savedEmail = localStorage.getItem("email"),
     gotLostLink = document.querySelector('.link-lost'),
     gotLostPopup = document.querySelector('.lost-popup'),
     mapLink = document.querySelector('.link-map'),
@@ -10,10 +12,26 @@ var i, l,
     addToCartLinks = document.querySelectorAll('.good-action-buy'),
     addToCartPopup = document.querySelector('.cart-popup'),
     closePopupBtns = document.querySelectorAll('.popup-close'),
-    allPopups = document.querySelectorAll('.popup');
+    allPopups = document.querySelectorAll('.popup'),
+    nameInput = document.querySelector('#form-name'),
+    emailInput = document.querySelector('#form-email'),
+    textArea = document.querySelector('#form-text'),
+    form = document.querySelector('.lost-popup form');
 
 !!gotLostLink && gotLostLink.addEventListener('click', onGotLostLinkClick, false);
 !!mapLink && mapLink.addEventListener('click', onMapLinkClick, false);
+
+form.addEventListener("submit", function(event) {
+    if (!(nameInput.value && emailInput.value)) {
+      event.preventDefault();
+      gotLostPopup.classList.remove("popup-error");
+      gotLostPopup.offsetWidth = gotLostPopup.offsetWidth;
+      gotLostPopup.classList.add("popup-error");
+    } else {
+      localStorage.setItem("name", nameInput.value);
+      localStorage.setItem("email", emailInput.value);
+    }
+  });
 
 initServicesTabs();
 initGallery();
@@ -113,6 +131,13 @@ function onMapLinkClick(evt) {
 function onGotLostLinkClick(evt) {
   evt.preventDefault();
   gotLostPopup.classList.add('popup-show');
+  if (!!savedName && !!savedEmail) {
+    nameInput.value = savedName;
+    emailInput.value = savedEmail;
+    textArea.focus();
+  } else {
+    nameInput.focus();
+  }
 }
 
 function onClosePopupBtnClick(evt) {
