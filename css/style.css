@@ -1357,6 +1357,7 @@ a.gallery-to-catalog {
 #service-credit:target {
   z-index: 2;
 }
+
 .service {
   background-repeat: no-repeat;
   background-position: 100% 100%
@@ -1371,6 +1372,10 @@ a.gallery-to-catalog {
 
 .service-credit {
   background-image: url('../img/services/service-credit.png');
+}
+
+.services-content-right .service.active {
+  z-index: 2;
 }
 
 .services-list-item.active a {
