@@ -37,8 +37,13 @@ initServicesTabs();
 initGallery();
 
 function initServicesTabs() {
-  var tabs = document.querySelectorAll('.services-list-item'),
-      services = document.querySelector('.services-content-right').children;
+  var tabs = document.querySelectorAll('.services-list-item');
+
+  if (!tabs.length) {
+    return;
+  }
+
+  var services = document.querySelector('.services-content-right').children;
 
   for (i = 0, l = tabs.length; i < l; i++) {
     tabs[i].addEventListener('click', onServicesTabClick, false);
