@@ -21,7 +21,7 @@ var i, l,
 !!gotLostLink && gotLostLink.addEventListener('click', onGotLostLinkClick, false);
 !!mapLink && mapLink.addEventListener('click', onMapLinkClick, false);
 
-form.addEventListener("submit", function(event) {
+!!form && form.addEventListener("submit", function(event) {
     if (!(nameInput.value && emailInput.value)) {
       event.preventDefault();
       gotLostPopup.classList.remove("popup-error");
