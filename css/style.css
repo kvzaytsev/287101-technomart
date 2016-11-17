@@ -116,6 +116,7 @@ h3 {
 
 .search-input {
   width: 100%;
+  height: 100%;
   border: none;
   box-sizing: border-box;
   padding-top: 11px;
@@ -130,13 +131,43 @@ h3 {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
-.search-input::-moz-placeholder  {
-  color:#F4F5F7;
+.search-input::-webkit-input-placeholder {
+  color:#fff;
   opacity: 1;
 }
 
-.search-input:-moz-placeholder  {
-  color:#F4F5F7;
+.search-input::-moz-placeholder {
+  color:#fff;
+  opacity: 1;
+}
+
+.search-input:-ms-input-placeholder {
+  color:#fff;
+  opacity: 1;
+}
+
+.search-input::placeholder {
+  color:#fff;
+  opacity: 1;
+}
+
+.search-input:focus::-webkit-input-placeholder {
+  color:#000;
+  opacity: 1;
+}
+
+.search-input:focus::-moz-placeholder {
+  color:#000;
+  opacity: 1;
+}
+
+.search-input:focus:-ms-input-placeholder {
+  color:#000;
+  opacity: 1;
+}
+
+.search-input:focus::placeholder {
+  color:#000;
   opacity: 1;
 }
 
@@ -160,7 +191,7 @@ h3 {
   box-sizing: border-box;
   padding-top: 12px;
   padding-bottom: 13px;
-  line-height: 1.05;
+  line-height: 1;
   font-size: 17px;
   color: #fff;
   text-decoration: none;
@@ -307,6 +338,10 @@ h3 {
 .user-sign-in-up {
   font-size: 0;
   text-align: right;
+}
+
+.user-sign-in-up a {
+  color: #000;
 }
 
 .user-action {
@@ -1516,6 +1551,7 @@ a.gallery-to-catalog {
 
 .pager-item.active a {
   background-color: #E13C42;
+  color: #fff;
 }
 
 .catalog {
