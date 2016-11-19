@@ -315,10 +315,11 @@ h3 {
 }
 
 .header-contacts-tel::before {
+  content: "";
   position: absolute;
   left: 11px;
-  content: "";
   display: inline-block;
+  vertical-align: top;
   width: 19px;
   height: 19px;
   background: url("../img/icons/icon-phone.png") no-repeat;
@@ -348,6 +349,7 @@ h3 {
   display: inline-block;
   margin-left: 10px;
   padding: 12px 24px;
+  vertical-align: top;
   text-decoration: none;
   background: #fff;
   line-height: 1;
@@ -398,17 +400,17 @@ a.user-info-profile::before {
 
 a.user-info-profile::before {
   left: 16px;
-  background: url('../img/icons/icon-user.png') no-repeat;
+  background: url("../img/icons/icon-user.png") no-repeat;
 }
 
 a.user-info-profile:hover::before {
   left: 16px;
-  background: url('../img/icons/icon-user-active.png') no-repeat;
+  background: url("../img/icons/icon-user-active.png") no-repeat;
 }
 
 a.user-info-profile:active::before {
   left: 16px;
-  background: url('../img/icons/icon-user.png') no-repeat;
+  background: url("../img/icons/icon-user.png") no-repeat;
 }
 
 a.user-info-exit {
@@ -419,17 +421,17 @@ a.user-info-exit {
 
 a.user-info-exit::before {
   right: 10px;
-  background: url('../img/icons/icon-logout.png') no-repeat center;
+  background: url("../img/icons/icon-logout.png") no-repeat center;
 }
 
 a.user-info-exit:hover::before {
   right: 10px;
-  background: url('../img/icons/icon-logout-active.png') no-repeat center;
+  background: url("../img/icons/icon-logout-active.png") no-repeat center;
 }
 
 a.user-info-exit:active::before {
   right: 10px;
-  background: url('../img/icons/icon-logout.png') no-repeat center;
+  background: url("../img/icons/icon-logout.png") no-repeat center;
 }
 
 a.sign-in {
@@ -472,17 +474,17 @@ a.sign-in {
   margin-left: -9px;
   width: 33px;
   height: 20px;
-  background: url('../img/icons/icon-login.png');
+  background: url("../img/icons/icon-login.png");
   background-repeat: no-repeat;
   vertical-align: middle;
 }
 
 .sign-in:hover::before {
-  background-image: url('../img/icons/icon-login-active.png');
+  background-image: url("../img/icons/icon-login-active.png");
 }
 
 a.sign-in:active::before  {
-  background-image: url('../img/icons/icon-login.png');
+  background-image: url("../img/icons/icon-login.png");
 }
 
 .main-navigation {
@@ -495,9 +497,9 @@ a.sign-in:active::before  {
 }
 
 .nav-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav-menu {
@@ -508,6 +510,7 @@ a.sign-in:active::before  {
 
 .nav-menu-item {
   display: inline-block;
+  vertical-align: top;
 }
 
 .nav-menu-item a {
@@ -563,7 +566,6 @@ a.sign-in:active::before  {
   width: 8px;
   height: 1px;
   transform-origin: right;
-
   background-color: #cdd1d8;
 }
 
@@ -582,8 +584,9 @@ a.sign-in:active::before  {
 
 a.breadcrumb-home {
   display: inline-block;
+  vertical-align: top;
   text-indent: -9999px;
-      margin-left: 10px;
+  margin-left: 10px;
 }
 
 .breadcrumb-home::before {
@@ -592,7 +595,7 @@ a.breadcrumb-home {
   left: 0;
   width: 17px;
   height: 20px;
-  background: url('../img/icons/icon-home.png') no-repeat center;
+  background: url("../img/icons/icon-home.png") no-repeat center;
 }
 
 .soring {
@@ -633,7 +636,7 @@ a.breadcrumb-home {
 }
 
 .sort-kind:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .sort-order {
@@ -722,7 +725,6 @@ a.breadcrumb-home {
   right: -10px;
 }
 
-
 .price-inputs {
   margin-top: 10px;
 }
@@ -744,6 +746,7 @@ a.breadcrumb-home {
 .price-divider {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   margin-left: 10px;
   text-indent: -9999px;
 }
@@ -796,33 +799,33 @@ a.breadcrumb-home {
 
 .filter input[type="radio"],
 .filter input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 input[type="radio"] + label {
-    margin-bottom: 23px;
+  margin-bottom: 23px;
 }
 
 input[type="checkbox"] + label::before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 23px;
-    margin-right: 8px;
-    vertical-align: middle;
-    background: url('../img/icons/icon-check-off.png') no-repeat left;
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background: url("../img/icons/icon-check-off.png") no-repeat left;
 }
 
 .filter-vendors label:hover::before {
-  background: url('../img/icons/icon-check-off-active.png') no-repeat left;
+  background: url("../img/icons/icon-check-off-active.png") no-repeat left;
 }
 
 input[type="checkbox"]:checked + label::before {
-  background: url('../img/icons/icon-check-on.png') no-repeat left;
+  background: url("../img/icons/icon-check-on.png") no-repeat left;
 }
 
 input[type="checkbox"]:checked + label:hover::before {
-  background: url('../img/icons/icon-check-on-active.png') no-repeat left;
+  background: url("../img/icons/icon-check-on-active.png") no-repeat left;
 }
 
 input[type="radio"] + label::before {
@@ -839,7 +842,7 @@ input[type="radio"] + label::before {
 }
 
 input[type="radio"] + label:hover::before {
-    box-shadow: 0 0 0 3px #b5b5b5;
+  box-shadow: 0 0 0 3px #b5b5b5;
 }
 
 input[type="radio"]:checked + label::before{
@@ -889,27 +892,27 @@ input[type="radio"]:checked + label:hover::before{
 
 .promo-materials {
   background-color: #F6B22D;
-  background-image: url('../img/promo/promo-materials.png');
+  background-image: url("../img/promo/promo-materials.png");
 }
 
 .promo-tools {
   background-color: #4AAEDF;
-  background-image: url('../img/promo/promo-tools.png');
+  background-image: url("../img/promo/promo-tools.png");
 }
 
 .promo-machinery {
   background-color: #CD79D1;
-  background-image: url('../img/promo/promo-machinery.png');
+  background-image: url("../img/promo/promo-machinery.png");
 }
 
 .promo-sale {
   background-color: #85D179;
-  background-image: url('../img/promo/promo-sale.png');
+  background-image: url("../img/promo/promo-sale.png");
 }
 
 .promo-delivery {
   background-color: #F6B22D;
-  background-image: url('../img/promo/promo-delivery.png');
+  background-image: url("../img/promo/promo-delivery.png");
 }
 
 .promo-tools,
@@ -934,6 +937,7 @@ input[type="radio"]:checked + label:hover::before{
   font-size: 14px;
   line-height: 1.28;
   color: #fff;
+  vertical-align: top;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -1019,27 +1023,27 @@ input[type="radio"]:checked + label:hover::before{
 }
 
 .gallery-btn {
-    position: absolute;
-    display: block;
-    width: 22px;
-    height: 40px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transform: translateY(-50%);
-    text-indent: -9999px;
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  text-indent: -9999px;
 }
 
 .gallery-btn-left {
-    left: 25px;
-    top:50%;
-    background: url('../img/icons/icon-left.png') no-repeat;
+  left: 25px;
+  top:50%;
+  background: url("../img/icons/icon-left.png") no-repeat;
 }
 
 .gallery-btn-right {
   right: 20px;
   top:50%;
-  background: url('../img/icons/icon-right.png') no-repeat;
+  background: url("../img/icons/icon-right.png") no-repeat;
 }
 
 .gallery-circles {
@@ -1053,6 +1057,7 @@ input[type="radio"]:checked + label:hover::before{
   width: 8px;
   height: 8px;
   padding: 0;
+  vertical-align: top;
   background-color: #fff;
   border: 1px solid #fff;
   box-shadow: 0 0 1px 1px #cdc7c3;
@@ -1105,6 +1110,7 @@ a.gallery-to-catalog {
   background-color: #ee3643;
   color: #fff;
   border-radius: 3px;
+  vertical-align: top;
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1166,7 +1172,6 @@ a.gallery-to-catalog {
   box-sizing: border-box;
   padding: 8px 0;
   margin-bottom: 13px;
-
 }
 
 .good-action-buy {
@@ -1191,7 +1196,7 @@ a.gallery-to-catalog {
   left: 12px;
   width: 20px;
   height: 20px;
-  background: url('../img/icons/icon-basket.png') no-repeat;
+  background: url("../img/icons/icon-basket.png") no-repeat;
   opacity: 0.3;
 }
 
@@ -1240,35 +1245,39 @@ a.gallery-to-catalog {
 }
 
 .price {
-    position: relative;
-    display: inline-block;
-    font-size: 17px;
-    line-height: 1.05;
-    padding-right: 20px;
-    padding-left: 35px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    margin-left: -10px;
-    color: #fff;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius : 3px;
-    background-color: #ee3643;
-    text-transform: uppercase;
-    text-decoration: none;
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 1.05;
+  padding-right: 20px;
+  padding-left: 35px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-left: -10px;
+  vertical-align: top;
+  color: #fff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius : 3px;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .price:after, .price:before {
-    content: "";
-    position: absolute;
-    left: 100%;
-    width: 20px;
-    height: 50%;
-    background-color: #ee3643;
+  content: "";
+  position: absolute;
+  left: 100%;
+  width: 20px;
+  height: 50%;
+  background-color: #ee3643;
 }
+
 .price:before {
-    top: 0px;
-    background: linear-gradient(to top right,  #ee3643 50%, transparent 51%);
+  top: 0px;
+  background: linear-gradient(to top right,  #ee3643 50%, transparent 51%);
 }
+
 .price:after {
     bottom: 0px;
     background: linear-gradient(to bottom right,  #ee3643 50%, transparent 51%);
@@ -1286,6 +1295,7 @@ a.gallery-to-catalog {
   border: 1px solid #e5e5e5;
   margin-right: 20px;
   margin-bottom: 20px;
+  vertical-align: top;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   text-indent: -9999px;
@@ -1297,35 +1307,35 @@ a.gallery-to-catalog {
 }
 
 .venodor-bosch {
-  background-image: url('../img/brands/b-bosch.jpg');
+  background-image: url("../img/brands/b-bosch.jpg");
 }
 
 .venodor-makita {
-  background-image: url('../img/brands/b-makita.jpg');
+  background-image: url("../img/brands/b-makita.jpg");
 }
 
 .venodor-dewalt {
-  background-image: url('../img/brands/b-dewalt.jpg');
+  background-image: url("../img/brands/b-dewalt.jpg");
 }
 
 .venodor-iterskol {
-  background-image: url('../img/brands/b-interskol.jpg');
+  background-image: url("../img/brands/b-interskol.jpg");
 }
 
 .venodor-hitachi {
-  background-image: url('../img/brands/b-hitachi.jpg');
+  background-image: url("../img/brands/b-hitachi.jpg");
 }
 
 .venodor-lg {
-  background-image: url('../img/brands/b-lg.jpg');
+  background-image: url("../img/brands/b-lg.jpg");
 }
 
 .venodor-aeg {
-  background-image: url('../img/brands/b-aeg.jpg');
+  background-image: url("../img/brands/b-aeg.jpg");
 }
 
 .venodor-metabo {
-  background-image: url('../img/brands/b-metabo.jpg');
+  background-image: url("../img/brands/b-metabo.jpg");
 }
 
 .popular-content .venodor:nth-child(4n) {
@@ -1380,19 +1390,19 @@ a.gallery-to-catalog {
 }
 
 .services-list-item a {
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 16px;
-    padding-left: 22px;
-    font-family: "Cuprum", "Arial", sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid #293449;
-    border-top: 1px solid #405069;
-    background-color: #32425c;
-    color: #fff;
-    text-decoration: none;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.5;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
+  background-color: #32425c;
+  color: #fff;
+  text-decoration: none;
 }
 
 .services-list-item:hover a {
@@ -1410,15 +1420,15 @@ a.gallery-to-catalog {
   background-position: 100% 100%
 }
 .service-delivery {
-  background-image: url('../img/services/service-delivery.png');
+  background-image: url("../img/services/service-delivery.png");
 }
 
 .service-guarantee {
-  background-image: url('../img/services/service-warranty.png');
+  background-image: url("../img/services/service-warranty.png");
 }
 
 .service-credit {
-  background-image: url('../img/services/service-credit.png');
+  background-image: url("../img/services/service-credit.png");
 }
 
 .services-content-right .service.active {
@@ -1499,7 +1509,7 @@ a.gallery-to-catalog {
 }
 
 .contacts-block p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .contacts-block .map {
@@ -1582,7 +1592,6 @@ a.gallery-to-catalog {
   list-style: none;
 }
 
-
 .menu-bottom-sections {
   margin-top: 34px;
 }
@@ -1614,7 +1623,7 @@ a.gallery-to-catalog {
 }
 
 .footer-top-catalog a {
-    color: #fff;
+  color: #fff;
 }
 
 .menu-bottom-promo a {
@@ -1637,7 +1646,7 @@ a.gallery-to-catalog {
 }
 
 .footer-top-menu {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .footer-top-menu .home-bottom {
@@ -1676,7 +1685,6 @@ a.gallery-to-catalog {
   width: 300px;
   float: left;
   margin-right: 90px;
-
 }
 
 .footer-social {
@@ -1703,15 +1711,15 @@ a.gallery-to-catalog {
 }
 
 .social-btn-vk {
-  background-image: url('../img/icons/icon-vk.png');
+  background-image: url("../img/icons/icon-vk.png");
 }
 
 .social-btn-fb {
-  background-image: url('../img/icons/icon-facebook.png');
+  background-image: url("../img/icons/icon-facebook.png");
 }
 
 .social-btn-inst {
-  background-image: url('../img/icons/icon-instagramm.png');
+  background-image: url("../img/icons/icon-instagramm.png");
 }
 
 .social-btn:hover {
@@ -1770,7 +1778,7 @@ a.gallery-to-catalog {
 }
 
 .dialog {
-    border-top: 7px solid #FE0028;
+  border-top: 7px solid #FE0028;
 }
 
 .lost-popup {
@@ -1828,7 +1836,7 @@ a.gallery-to-catalog {
   left: 0;
   width: 65px;
   height: 65px;
-  background: #63a63e url('../img/icons/checkmark.png') no-repeat center;
+  background: #63a63e url("../img/icons/checkmark.png") no-repeat center;
   border-radius: 50%;
 }
 
@@ -1879,12 +1887,9 @@ a.gallery-to-catalog {
   display: block;
   top: 5px;
   right: 5px;
-
   width: 25px;
   height: 25px;
-
   font-size: 0;
-
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -1896,7 +1901,6 @@ a.gallery-to-catalog {
   position: absolute;
   top: 10px;
   left: 2px;
-
   width: 22px;
   height: 4px;
   background-color: #FE0028;
