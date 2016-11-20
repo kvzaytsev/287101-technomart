@@ -307,6 +307,7 @@ h3 {
   padding-bottom: 8px;
   padding-left: 22px;
   box-sizing: border-box;
+  text-decoration: none;
   width: 100%;
   border: 3px solid #fff;
   line-height: 1;
@@ -631,7 +632,7 @@ a.breadcrumb-home {
 
 .sort-kind:active,
 .sort-kind.active {
-  color: #E99F9B;
+  color: #ee3643;
   border-bottom: none;
 }
 
@@ -974,7 +975,8 @@ input[type="radio"]:checked + label:hover::before{
   padding-left: 50px;
   padding-right: 50px;
   color: #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   text-align: center;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 16px;
@@ -1030,7 +1032,8 @@ input[type="radio"]:checked + label:hover::before{
   background: none;
   border: none;
   cursor: pointer;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   text-indent: -9999px;
 }
 
@@ -1177,7 +1180,7 @@ a.gallery-to-catalog {
 .good-action-buy {
   position: relative;
   background: #63a63e;
-  box-shadow: 0 4px 0 0 #32425c;
+  box-shadow: 0 4px 0 0 #367315;
 }
 
 .good-action-buy:hover {
@@ -1631,7 +1634,7 @@ a.gallery-to-catalog {
 }
 
 .menu-bottom-sections a {
-  color: #fff;
+  color: #f1f5f7;
 }
 
 .footer-top {
@@ -1908,11 +1911,13 @@ a.gallery-to-catalog {
 }
 
 .popup-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .popup-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .filters-form {
@@ -1939,18 +1944,37 @@ a.link-btn-white {
   margin-bottom: 30px;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 .popup-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
