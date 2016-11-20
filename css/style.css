@@ -233,7 +233,7 @@ h3 {
 .purchase-link::before {
   content: "";
   position: absolute;
-  display: block;;
+  display: block;
   width: 20px;
   height: 20px;
   left:16px;
@@ -290,7 +290,6 @@ h3 {
   margin-right: 47px;
   margin-left: 53px;
   font-family: "Cuprum", "Arial", sans-serif;
-
 }
 
 .header-contacts {
@@ -393,7 +392,6 @@ a.user-info-exit::before,
 a.user-info-profile::before {
   content: "";
   position: absolute;
-
   display: block;
   width: 20px;
   height: 20px;
@@ -535,7 +533,7 @@ a.sign-in:active::before  {
 }
 
 .page-catalog .page-header{
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs {
@@ -547,7 +545,6 @@ a.sign-in:active::before  {
 
 .breadcrumb {
   position: relative;
-
   display: inline;
   padding-right: 40px;
 }
@@ -643,7 +640,7 @@ a.breadcrumb-home {
 .sort-order {
   display: inline-block;
   width: 0;
-	height: 0;
+  height: 0;
   vertical-align: middle;
   text-indent: -9999px;
 }
@@ -651,8 +648,8 @@ a.breadcrumb-home {
 .sort-order-asc {
   margin-left: 43px;
   border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid #C6C1BB;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #C6C1BB;
 }
 
 .sort-order-asc:active,
@@ -667,8 +664,8 @@ a.breadcrumb-home {
 .sort-order-desc {
   margin-left: 20px;
   border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #C6C1BB;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #C6C1BB;
 }
 
 .sort-order-desc:hover {
@@ -677,7 +674,7 @@ a.breadcrumb-home {
 
 .sort-order-desc:active,
 .sort-order-desc.active {
-	border-top: 10px solid #F93448;
+  border-top: 10px solid #F93448;
 }
 
 .filters-title {
@@ -692,7 +689,6 @@ a.breadcrumb-home {
   width: 220px;
   padding-left: 20px;
   padding-right: 20px;
-
   vertical-align: middle;
   background-color: #f7f3ec;
 }
@@ -716,6 +712,7 @@ a.breadcrumb-home {
   top:-9px;
   width: 4px;
   height: 4px;
+  cursor: pointer;
   border-radius: 50%;
   border: 8px solid #fff;
   background: #AEAEAE;
@@ -976,7 +973,7 @@ input[type="radio"]:checked + label:hover::before{
   padding-right: 50px;
   color: #fff;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   text-align: center;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 16px;
@@ -1033,7 +1030,7 @@ input[type="radio"]:checked + label:hover::before{
   border: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   text-indent: -9999px;
 }
 
@@ -1056,7 +1053,7 @@ input[type="radio"]:checked + label:hover::before{
 }
 
 .gallery-circle {
-  display: inline-block;;
+  display: inline-block;
   width: 8px;
   height: 8px;
   padding: 0;
@@ -1282,8 +1279,8 @@ a.gallery-to-catalog {
 }
 
 .price:after {
-    bottom: 0px;
-    background: linear-gradient(to bottom right,  #ee3643 50%, transparent 51%);
+  bottom: 0px;
+  background: linear-gradient(to bottom right,  #ee3643 50%, transparent 51%);
 }
 
 .popular-content .good-card:last-child {
@@ -1378,7 +1375,6 @@ a.gallery-to-catalog {
   margin: 0;
   padding: 32px 0;
   list-style: none;
-
 }
 
 .services-list::after {
@@ -1547,7 +1543,6 @@ a.gallery-to-catalog {
 .pager-item:not(.active):active {
   border-color: #ee3643;
 }
-
 
 .pager-item a {
   display: block;
@@ -1912,12 +1907,12 @@ a.gallery-to-catalog {
 
 .popup-close::before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .popup-close::after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .filters-form {
@@ -1947,34 +1942,34 @@ a.link-btn-white {
 @-webkit-keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
 .popup-error {
   -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+  animation: shake 0.6s;
 }
