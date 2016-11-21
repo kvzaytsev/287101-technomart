@@ -1264,7 +1264,8 @@ a.gallery-to-catalog {
   cursor: pointer;
 }
 
-.price:after, .price:before {
+.price:after,
+.price:before {
   content: "";
   position: absolute;
   left: 100%;
